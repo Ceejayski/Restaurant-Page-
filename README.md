@@ -1,2 +1,2 @@
-# Restuarant-Page
-Microverse curriculum
+# Restaurant-Page
+Microverse JavaScript Curriculum
