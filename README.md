@@ -15,7 +15,7 @@ This is a single page application project in Microverse's Javascript module. The
 Our project can be found at https://github.com/Ceejayski/Restaurant-Page-
 ## Live Demo
 
-You can find the demo [here](https://ceejayski.github.io/Restaurant-Page-/)
+You can find the demo [here](https://affectionate-turing-e7a407.netlify.app)
 
 
 ## To run the project in local
