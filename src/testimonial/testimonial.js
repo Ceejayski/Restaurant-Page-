@@ -112,10 +112,10 @@ const Testimonial = () => {
 
     if (e.target.className.includes('fa-chevron-right')) {
       id += 1;
-      setTimeout(() => { testCreate(arr[id]); }, 200);
+      setTimeout(() => { testCreate(arr[id]); }, 500);
     } else if (e.target.className.includes('fa-chevron-left')) {
       id -= 1;
-      setTimeout(() => { testCreate(arr[id]); }, 200);
+      setTimeout(() => { testCreate(arr[id]); }, 500);
     }
   };
 
