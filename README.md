@@ -12,16 +12,16 @@ This is a single page application project in Microverse's Javascript module. The
 
 ## 🚀 Our Project
 
-Our project can be found at https://github.com/Ceejayski/Restaurant-Page
+Our project can be found at https://github.com/Ceejayski/Restaurant-Page-
 ## Live Demo
 
-You can find the demo [here](https://ceejayski.github.io/Restaurant-Page/)
+You can find the demo [here](https://ceejayski.github.io/Restaurant-Page-/)
 
 
 ## To run the project in local
 
-- clone the repository from here [repo link](https://github.com/Ceejayski/Restaurant-Page)
-- navidate to the folder `Restaurant-Page`
+- clone the repository from here [repo link](https://github.com/Ceejayski/Restaurant-Page-)
+- navidate to the folder `Restaurant-Page-`
 - open index.html with your browser
 
 ## 👨🏽‍💻 👨🏿‍💻 Creators
