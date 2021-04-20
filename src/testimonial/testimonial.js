@@ -1,26 +1,24 @@
 const Testimonial = () => {
-  const test = document.createElement("div");
-  test.className = "testimonial container text-center";
-  const testSection = document.createElement("div");
-  testSection.className = "row";
-  const header = document.createElement("h1");
-  header.appendChild(document.createTextNode("Testimonial"));
-  header.className = "page-header";
+  const test = document.createElement('div');
+  test.className = 'testimonial container text-center';
+  const testSection = document.createElement('div');
+  testSection.className = 'row';
+  const header = document.createElement('h1');
+  header.appendChild(document.createTextNode('Testimonial'));
+  header.className = 'page-header';
   test.appendChild(header);
   test.appendChild(testSection);
-  const testCarousel = document.createElement("div");
+  const testCarousel = document.createElement('div');
   test.appendChild(testCarousel);
-  testCarousel.className = "d-flex justify-content-center align-items-center";
-  const carouselBtnLeft = document.createElement("div");
-  carouselBtnLeft.className = "carousel-btn mx-3";
-  carouselBtnLeft.innerHTML =
-    '<button><i class="fa fa-chevron-left"></i></button>';
-  const carouselBtnRight = document.createElement("div");
-  carouselBtnRight.className = "carousel-btn mx-3";
-  carouselBtnRight.innerHTML =
-    '<button><i class="fa fa-chevron-right"></i></button>';
-  const testimonialText = document.createElement("div");
-  testimonialText.className = "testimonial-text";
+  testCarousel.className = 'd-flex justify-content-center align-items-center';
+  const carouselBtnLeft = document.createElement('div');
+  carouselBtnLeft.className = 'carousel-btn mx-3';
+  carouselBtnLeft.innerHTML = '<button><i class="fa fa-chevron-left"></i></button>';
+  const carouselBtnRight = document.createElement('div');
+  carouselBtnRight.className = 'carousel-btn mx-3';
+  carouselBtnRight.innerHTML = '<button><i class="fa fa-chevron-right"></i></button>';
+  const testimonialText = document.createElement('div');
+  testimonialText.className = 'testimonial-text';
 
   testCarousel.appendChild(carouselBtnLeft);
   testCarousel.appendChild(testimonialText);
@@ -28,46 +26,46 @@ const Testimonial = () => {
   const testmonialArray = [
     {
       id: 0,
-      name: "Okoli Chijioke",
+      name: 'Okoli Chijioke',
       reviews:
-        "Donec imperdiet congue orci consequat mattis. Donec rutrum porttito sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices ne sed neque.",
-      img: "https://preview.colorlib.com/theme/burger/img/testmonial/3.png",
-      alt: "man",
+        'Donec imperdiet congue orci consequat mattis. Donec rutrum porttito sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices ne sed neque.',
+      img: 'https://preview.colorlib.com/theme/burger/img/testmonial/3.png',
+      alt: 'man',
       star: 3,
     },
 
     {
       id: 1,
-      name: "Okoli Chijioke",
+      name: 'Okoli Chijioke',
       reviews:
-        "Donec imperdiet congue orci consequat mattis. Donec rutrum porttito sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices ne sed neque.",
-      img: "https://preview.colorlib.com/theme/burger/img/testmonial/3.png",
-      alt: "man",
+        'Donec imperdiet congue orci consequat mattis. Donec rutrum porttito sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices ne sed neque.',
+      img: 'https://preview.colorlib.com/theme/burger/img/testmonial/3.png',
+      alt: 'man',
       star: 4,
     },
 
     {
       id: 2,
-      name: "Okoli Chijioke",
+      name: 'Okoli Chijioke',
       reviews:
-        "Donec imperdiet congue orci consequat mattis. Donec rutrum porttito sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices ne sed neque.",
-      img: "https://preview.colorlib.com/theme/burger/img/testmonial/3.png",
-      alt: "man",
+        'Donec imperdiet congue orci consequat mattis. Donec rutrum porttito sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices ne sed neque.',
+      img: 'https://preview.colorlib.com/theme/burger/img/testmonial/3.png',
+      alt: 'man',
       star: 4,
     },
 
     {
       id: 3,
-      name: "Okoli Chijioke",
+      name: 'Okoli Chijioke',
       reviews:
-        "Donec imperdiet congue orci consequat mattis. Donec rutrum porttito sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices ne sed neque.",
-      img: "https://preview.colorlib.com/theme/burger/img/testmonial/3.png",
-      alt: "man",
+        'Donec imperdiet congue orci consequat mattis. Donec rutrum porttito sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices ne sed neque.',
+      img: 'https://preview.colorlib.com/theme/burger/img/testmonial/3.png',
+      alt: 'man',
       star: 2,
     },
   ];
   const starCount = (no) => {
-    let stars = "";
+    let stars = '';
     for (let i = 1; i <= no; i += 1) {
       stars += ' <i class="fa fa-star"></i>';
     }
@@ -97,21 +95,14 @@ const Testimonial = () => {
         setTimeout(() => {
           testCreate(arr[no]);
         }, 10000 * no);
-      })(no++);
+      }(no++));
     }
   };
 
-  const btnLogic = (arr) => {
-    const id = parseInt(testimonialText.id.replace("testi", ""), 10);
-    if (id === arr.length - 1) {
-    } else if (id === 0) {
-      carouselBtnLeft.disabled = true;
-    }
-  };
   const carouselbtn = (arr, e) => {
-    let id = parseInt(testimonialText.id.replace("testi", ""), 10);
+    let id = parseInt(testimonialText.id.replace('testi', ''), 10);
 
-    if (e.target.className.includes("fa-chevron-right")) {
+    if (e.target.className.includes('fa-chevron-right')) {
       if (id === arr.length - 1) {
         carouselBtnRight.disabled = true;
       } else {
@@ -120,7 +111,7 @@ const Testimonial = () => {
           testCreate(arr[id]);
         }, 500);
       }
-    } else if (e.target.className.includes("fa-chevron-left")) {
+    } else if (e.target.className.includes('fa-chevron-left')) {
       if (id === 0) {
         carouselBtnLeft.disabled = true;
       } else {
@@ -133,7 +124,7 @@ const Testimonial = () => {
   };
 
   const carouselListner = (arr) => {
-    document.getElementsByTagName("MAIN")[0].addEventListener("click", (e) => {
+    document.getElementsByTagName('MAIN')[0].addEventListener('click', (e) => {
       carouselbtn(arr, e);
     });
   };
