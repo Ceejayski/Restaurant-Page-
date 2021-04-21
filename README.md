@@ -22,6 +22,8 @@ You can find the demo [here](https://affectionate-turing-e7a407.netlify.app)
 
 - clone the repository from here [repo link](https://github.com/Ceejayski/Restaurant-Page-)
 - navidate to the folder `Restaurant-Page-`
+- run `npm install` on your terminal
+- Then run `npm run build` on your terminal
 - open index.html with your browser
 
 ## 👨🏽‍💻 👨🏿‍💻 Creators
